@@ -1,8 +1,8 @@
 use std::io::{BufRead, BufReader};
 use std::fs::File;
 
-fn main() {
-    let file = File::open("input01.txt").unwrap();
+pub fn main() {
+    let file = File::open("assets/input01.txt").unwrap();
     let reader = BufReader::new(file);
     let mut total1 = 0;
     let mut total2 = 0;
