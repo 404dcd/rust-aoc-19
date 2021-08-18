@@ -2,6 +2,7 @@ use std::env;
 mod solve01;
 mod solve02;
 mod solve03;
+mod solve04;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -11,6 +12,7 @@ fn main() {
         "01" => solve01::main(),
         "02" => solve02::main(),
         "03" => solve03::main(),
+        "04" => solve04::main(),
         _ => println!("Unknown problem '{}'", problem),
     }
 }
