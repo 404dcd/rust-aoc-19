@@ -6,6 +6,7 @@ mod solve04;
 mod solve05;
 mod solve06;
 mod solve07;
+mod solve08;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -19,6 +20,7 @@ fn main() {
         "05" => solve05::main(),
         "06" => solve06::main(),
         "07" => solve07::main(),
+        "08" => solve08::main(),
         _ => println!("Unknown problem '{}'", problem),
     }
 }
